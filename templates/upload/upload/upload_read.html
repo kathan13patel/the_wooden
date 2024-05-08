@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Read</title>
+</head>
+<body>
+	<table border="1" align="center" cellpadding="10" cellspacing="0">
+		<tr bgcolor="silver">
+			<td>File Id</td>
+			<td>File Name</td>
+			<td>Image</td>
+			<td>Delete</td>
+			<td>Edit</td>
+		</tr>
+		{% for row in result %}
+			<tr>
+				<td>{{row.id}}</td>
+				<td>{{row.file_name}}</td>
+				<td><img src="/media/upload/{{row.file_name}}" height="100" width="100"></td>
+				<td><a href="/upload/upload_delete/{{row.id}}">delete</a></td>
+				<td><a href="/upload/upload_edit/{{row.id}}">edit</a></td>
+			</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

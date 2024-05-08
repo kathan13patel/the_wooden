@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- <title>The</title> -->
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="{% static '/css/style-starter.css' %}">
+
+  <!-- google fonts -->
+  <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container vh-100">
+	<div class="row text-center mx-auto vh-50 justify-content-center">
+            <div class="card card_border col-xl-5 mx-auto py-2 mt-5">
+                <div class="cards__heading">
+                    <h3>Log in Now</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/myadmin/admin_login_check" method="post"> {% csrf_token %}
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                        <input type="text" class="form-control input-style" placeholder="username" id="username" name="username">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                          <input type="password" class="form-control input-style" placeholder="password" id="password" name="password">
+                        </div>
+                    </div>
+                    {% if messages %}
+                        <ul class="messages font-weight-bold" style="list-style: none; color: red;">
+                            {% for message in messages %}
+                            <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary btn-style mt-4">Login</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+</div>
+<script src="js/bootstrap.js' %}"></script>
+<script src="js/jquery.dcjqaccordion.2.7.js' %}"></script>
+<script src="js/scripts.js' %}"></script>
+<script src="js/jquery.slimscroll.js' %}"></script>
+<script src="js/jquery.nicescroll.js' %}"></script>
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js' %}"></script><![endif]-->
+<script src="js/jquery.scrollTo.js' %}"></script>
+</body>
+</html>

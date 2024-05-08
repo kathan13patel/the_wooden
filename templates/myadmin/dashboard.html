@@ -1,0 +1,61 @@
+{% extends 'common/layout.html' %}
+{% load static %}
+{% block content %}
+
+  <!-- content -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb my-breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+      </ol>
+    </nav>
+    <div class="welcome-msg pt-3 pb-4">
+      <h1>Hi <span class="text-primary">{{super.username}}</span>, Welcome back</h1>
+    </div>
+
+    <!-- statistics data -->
+    <div class="statistics">
+      <div class="row">
+        <div class="col-xl-12 pr-xl-2">
+          <div class="row">
+            <div class="col-sm-3 pr-sm-2 statistics-grid">
+              <a href="{% url 'customer_read' %}">
+                <div class="card card_border border-primary-top p-4">
+                  <i class="fa fa-users"> </i>
+                  <h3 class="text-primary number">{{total}}</h3>
+                  <p class="stat-text">Total Users</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-3 pl-sm-2 statistics-grid">
+              <a href="{% url 'order_read' %}">
+                <div class="card card_border border-primary-top p-4">
+                  <i class="fa fa-shopping-cart"> </i>
+                  <h3 class="text-secondary number">₹{{order}}</h3>
+                  <p class="stat-text">Total Purchased</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-3 pl-sm-2 statistics-grid">
+              <a href="{% url 'inquiry_read' %}">
+                <div class="card card_border border-primary-top p-4">
+                  <i class="fa fa-eye"> </i>
+                  <h3 class="text-secondary number">{{inquiry}}</h3>
+                  <p class="stat-text">Total Inquiry</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-3 pl-sm-2 statistics-grid">
+              <a href="{% url 'product_read' %}">
+                <div class="card card_border border-primary-top p-4">
+                  <i class="fa fa-list"> </i>
+                  <h3 class="text-secondary number">{{product}}</h3>
+                  <p class="stat-text">Total Products</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

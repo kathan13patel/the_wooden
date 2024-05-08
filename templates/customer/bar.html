@@ -1,0 +1,98 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}
+<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1>Bar</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- end breadcrumb section -->
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+			<div class="row product-lists" style="position: relative; height: auto;">
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'chair_8' %}"><img src="{% static '/customer/img/chair/bar_1.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Modern Rectangular sheesham Wooden bar stools in Walnut/Teak Finish for Home bar/bar Chair (Natural)- 44D x 42W x 105H Centimeters</h3>
+						<p class="product-price"> ₹2,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'chair_9' %}"><img src="{% static '/customer/img/chair/bar_2.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">bar Stool with Metal Legs Breakfast Kitchen Counter Bar Seat Chairs Barstools High Stools (Dark Wooden)-71D x 30W x 30H Centimeters</h3>
+						<p class="product-price"> ₹1,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'chair_10' %}"><img src="{% static '/customer/img/chair/bar_3.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Sheeesham Wood bar Chairs/bar Stool/Kitchen Chair with Rounded Back Rest with arm Rest in Natural Brown Finish 29 inches Seating Height, Set of 2 - 29D x 16W x 16H Centimeters</h3>
+						<p class="product-price"> ₹7,400</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'chair_11' %}"><img src="{% static '/customer/img/chair/bar_4.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Modern Sagwan Wood Frame with 360 Degree Ball & Cast Swivel Valebeck Height Bar Stool (Set of 2, Grey)</h3>
+						<p class="product-price"> ₹19,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'chair_12' %}"><img src="{% static '/customer/img/chair/bar_5.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Bar Stool, Pack of 2, Solid Wood with Natural Finish - 45*45*76 Centimeters</h3>
+						<p class="product-price"> ₹4,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'chair_13' %}"><img src="{% static '/customer/img/chair/bar_6.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Handicraft Antique Look & Stylish Wooden Bar Chair- 45.7D x 45.7W x 106.7H Centimeters</h3>
+						<p class="product-price"> ₹12,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'chair_14' %}"><img src="{% static '/customer/img/chair/bar_7.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Sheesham Wood Long Bar Chair bar Stool Rosewood Natural Brown Finish Natural - 35D x 35W x 72H Centimeters</h3>
+						<p class="product-price"> ₹1,900 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-md-12">
+		            <div class="product-filters text-center ">
+						<a href="{% url 'chair' %}" class="cart-btn btn-lg">Back</a>
+					</div>
+		        </div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

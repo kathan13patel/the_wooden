@@ -1,0 +1,103 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}		
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1>See more Details</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- single product -->
+	<div class="single-product mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="single-product-img">
+						<img src="{% static '/customer/img/chair/chair_1.jpg' %}" alt="">
+					</div>
+				</div>
+				<div class="col-md-7 p-5">
+					<div class="single-product-content">
+						<!-- {% for cart in single_r %} -->
+						<h3>hello</h3>
+						<p class="single-product-pricing">15000</p>
+						<div class="single-product-form">
+							<form action="index.html">
+								<input type="number" placeholder="0">
+							</form>
+							<a href="{% url 'cart' %}" class="cart-btn m-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+							<a href="{% url 'check_out' %}" class="cart-btn m-3"><i class=""></i> Buy Now</a>
+						</div>
+					</div>
+					<div class="px-2 p-5">
+                        <div class="row bg-light align-items-center text-center justify-content-center py-2">
+                            <div class="col-6">
+                                <p class="mb-0 font-weight-bold">Size</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-0">Medium</p>
+                            </div>
+                        </div>
+                        <div class="row text-center align-items-center justify-content-center py-2">
+                            <div class="col-6">
+                                <p class="mb-0 font-weight-bold">Material</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-0">Wood</p>
+                            </div>
+                        </div>
+                        <div class="row bg-light text-center align-items-center justify-content-center py-2">
+                            <div class="col-6">
+                                <p class="mb-0 font-weight-bold">Product Dimention</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-0">62D x 62W x 79H Centimeters</p>
+                            </div>
+                        </div>
+                        <div class="row text-center align-items-center justify-content-center py-2">
+                            <div class="col-6">
+                                <p class="mb-0 font-weight-bold">Colour</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-0">Maroon</p>
+                            </div>
+                        </div>
+                        <div class="row bg-light row text-center align-items-center justify-content-center py-2">
+                            <div class="col-6">
+                                <p class="mb-0 font-weight-bold">Recommended Uses For Product</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-0">Relexing,Camping</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="feature-bullets" class="a-section p-5 a-spacing-medium a-spacing-top-small"><hr>
+                        <h3> About this item </h3>               
+                        <ul class="a-unordered-list a-vertical a-spacing-mini">    
+                        	<li class="a-spacing-mini"><span class="a-list-item">W x H x D: 62 cm x 79 cm x 62 cm (2 ft x 2 ft 7 in x 2 ft)</span>
+                        	</li>  
+                        	<li class="a-spacing-mini"><span class="a-list-item">Weight: 8 kg</span>
+                        	</li>  
+                        </ul>
+              		</div>
+              		<!-- {% endfor %} -->
+				</div>
+				<div class="col-md-12">
+		            <div class="product-filters text-center ">
+						<a href="{% url 'chair' %}" class="cart-btn btn-lg">Back</a>
+					</div>
+		        </div>
+			</div>
+		</div>
+	</div>
+	<!-- end single product -->
+	
+{% endblock %}	

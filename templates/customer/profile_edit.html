@@ -1,0 +1,70 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}
+<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1>Edit Profile</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- registration form -->
+	<div class="contact-from-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 mb-5 mb-lg-0">
+				</div> 
+				<div class="col-lg-8 align-center">
+					<form method="POST" action="/customer/profile_update/{{result.user.id}}">
+						{% csrf_token %}
+						<div class="form-group row">
+						    <div class="col-lg-12">
+							    <input type="text" class="form-control form-control-lg" id="f_name" name="f_name" placeholder="First name" value="{{result.user.first_name}}">
+							</div>
+						</div>
+						<div class="form-group row">
+						    <div class="col-lg-12">
+							    <input type="text" class="form-control form-control-lg" id="l_name" name="l_name" placeholder="Last name" value="{{result.user.last_name}}">
+							</div>
+						</div>
+						<div class="form-group row">
+						    <div class="col-lg-12">
+						        <input type="text" class="form-control form-control-lg" id="username" name="username" placeholder="Username" value="{{result.user.username}}">
+						    </div>
+						</div>
+						<div class="form-group row">
+						    <div class="col-lg-12">
+						        <input type="text" class="form-control form-control-lg" id="email" name="email" placeholder="Email" value="{{result.user.email}}">
+						    </div>
+						</div>
+						<div class="form-group row">
+						    <div class="col-lg-12">
+						        <input type="text" class="form-control form-control-lg" id="contact" name="contact" placeholder="Contact" value="{{result.contact}}">
+						    </div>
+						</div>
+						<div class="form-group row">
+						    <div class="col-lg-12">
+						        <textarea class="form-control form-control-lg" name="address" id="address" rows="3" placeholder="Address">{{result.address}}</textarea>
+						    </div>
+						</div>
+						<div class="form-group row text-center">
+						    <div class="col-lg-12">
+						        <p><input class="col-lg-3" type="submit" id="submit" name="submit" value="Edit"> 
+						    </div>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-2 mb-5 mb-lg-0">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end registartion form -->
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}
+<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1>Login</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- login form -->
+	<div class="contact-from-section mt-150 mb-150">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-12 mb-5 mb-lg-0">
+					<div class="form-title">
+						<h2>Have an account?</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 mb-5 mb-lg-0">
+				</div>
+				<div class="col-lg-8 mb-5 mb-lg-0">
+					<form method="POST" action="/customer/login_check">{% csrf_token %}
+						<div class="form-group row">
+						    <div class="col-lg-12">
+							    <input type="text" class="form-control form-control-lg" id="username" name="username" placeholder="Username">
+							</div>
+						</div>
+						<div class="form-group row">
+						    <div class="col-lg-12">
+						        <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password">
+						        {% if messages %}
+									<ul class="messages font-weight-bold" style="list-style: none;">
+									    {% for message in messages %}
+									    <li {% if message.tags %} class="{{ message.tags }} text-danger"{% endif %}>{{ message }}</li>
+									    {% endfor %}
+									</ul>
+								{% endif %}
+						    </div>
+						</div>
+  						<div class="form-group row col-lg-12">
+						    <div class="col-lg-12">
+						        <h6><a href="{% url 'password_reset' %}">Forget Password?</a></span></h6>
+						    </div>
+						</div>
+						<div class="form-group row text-center">
+						    <div class="col-lg-12">
+						        <p><input class="col-lg-3" type="submit" id="submit" name="submit" value="Login"></p>
+						    </div></div>
+						</div>
+						<hr>
+						<div class="form-group row text-center col-lg-12">
+						    <div class="col-lg-12">
+						        <h6>Not registered?<span><a href="{% url 'register' %}"> Create an Account</a></span></h6>
+						    </div>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-2 mb-5 mb-lg-0">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end login form -->
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}
+<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1>Contact us</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- contact form -->
+	<div class="contact-from-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mb-5 mb-lg-0">
+					<div class="form-title">
+						<h2>Have you any question?</h2>
+						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione! Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum minus voluptate? Dolore, esse natus!</p> -->
+					</div>
+				 	<div id="form_status"></div>
+					<div class="contact-form">
+						<form method="POST" action="/customer/inquiry_store">{% csrf_token %}
+							<div class="form-group row">
+						    <div class="col-lg-6">
+							    <input type="text" class="form-control form-control-lg" id="name" name="name" value="" placeholder="name">
+							</div>
+						    <div class="col-lg-6">
+							    <input type="text" class="form-control form-control-lg" id="email" name="email" value="" placeholder="email">
+							</div>
+						</div>
+							<div class="form-group row">
+						    <div class="col-lg-6">
+							    <input type="text" class="form-control form-control-lg" id="mobile" name="mobile" value="" placeholder="mobile">
+							</div>
+							<div class="col-lg-6">
+							    <input type="text" class="form-control form-control-lg" id="subject" name="subject" value="" placeholder="subject">
+							</div>
+						</div>
+						<div class="form-group row">
+						    <div class="col-lg-12">
+						        <textarea class="form-control form-control-lg" id="message" name="message" rows="3" placeholder="message"></textarea>
+						    </div>
+						</div>
+						{% if messages %}
+									<ul class="messages font-weight-bold text-danger" style="list-style: none;">
+							    		{% for message in messages %}
+							    		<li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+							    		{% endfor %}
+									</ul>
+								{% endif %}
+							<p><input class="col-lg-3" type="submit" id="submit" name="submit" value="Submit"></p>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="contact-form-wrap">
+						<div class="contact-form-box">
+							<h4><i class="fas fa-address-book"></i> Contact</h4>
+							<p>+91 9723507749 </p>
+							<p>+91 8799139604 </p>
+							<p>+91 8128706877 </p>
+						</div>
+						<div class="contact-form-box">
+							<h4><i class="fas fa-envelope"></i> Email</h4>
+							<p><a href="mailto:changechadhaval100@gmail.com">changechadhaval100@gmail.com</a></p>
+							<p><a href="mailto:patelkathan1384@gmail.com">patelkathan1384@gmail.com</a></p>
+							<p><a href="mailto:koitiyasiddhraj123@gmail.com">koitiyasiddhraj123@gmail.com</a></p>
+						</div>
+						<!-- <div class="contact-form-box">
+							<h4><i class="fas fa-map"></i>Address</h4>
+							<p>ABC</p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end contact form -->
+{% endblock %}

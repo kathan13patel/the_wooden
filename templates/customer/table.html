@@ -1,0 +1,261 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}
+<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1>table</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- end breadcrumb section -->
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+                <div class="col-md-12">
+                    <div class="product-filters text-center ">
+						<a href="{% url 'study' %}" class="cart-btn btn-lg">Study/Office</a>
+						<a href="{% url 'dining' %}" class="cart-btn btn-lg">Dining</a>
+					</div>
+                </div>
+            </div>
+
+			<div class="row product-lists" style="position: relative; height: auto;">
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_1' %}"><img src="{% static '/customer/img/table/table_1.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Dash Round Coffee Table for Living Room Bedroom - Solid Wood Tea Table for Living Room with Stylish Wooden Legs - Round Center Table for Living Room</h3>
+						<p class="product-price"> ₹ 3,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_2' %}"><img src="{% static '/customer/img/table/table_2.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Sheesham Wood Center Coffee Table Set with 4 Stools for Living Room Home Hall Solid Wood Tea Table Wooden Furniture for Home Office (Honey Finish)</h3>
+						<p class="product-price"> ₹ 8,800 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_3' %}"><img src="{% static '/customer/img/table/table_3.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Round Gold Coffee Table,2 Tier Coffee Tables for Living Room,Circle Coffe Table with Storage Modern Center Tea Table Wooden Faux Marble Top Metal Legs Accent Table (White)</h3>
+						<p class="product-price"> ₹ 2,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_4' %}"><img src="{% static '/customer/img/table/table_4.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Square Coffee Table with Designed Legs (Solid Sheesham Wood, Natural Finish)</h3>
+						<p class="product-price"> ₹ 3,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_5' %}"><img src="{% static '/customer/img/table/table_5.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Round Coffee Table, Center Tea Table Set 2 Piece, Nesting Stacking Table, Couch Table Living Room,Bedroom Engineering Wood with Iron Metal Frame (Golden and White)</h3>
+						<p class="product-price"> ₹ 2,800</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_6' %}"><img src="{% static '/customer/img/table/table_6.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Coffee Table Living Room Table Solid Wood in Conical Shape | Wooden Surface Top & Sturdy Metal Legs Industrial Sofa Table for Living Room Modern Design Home Furniture</h3>
+						<p class="product-price"> ₹ 3,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_7' %}"><img src="{% static '/customer/img/table/table_7.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Handicraft Solid Wooden Round Dining Table | Coffee Table for Living Room, Dining Room, Hall & Home, Natural Finish</h3>
+						<p class="product-price"> ₹ 19,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_8' %}"><img src="{% static '/customer/img/table/table_8.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Wooden Designer Coffee Table for Living Room (Solid Wood, Walnut)</h3>
+						<p class="product-price"> ₹ 5,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_9' %}"><img src="{% static '/customer/img/table/study_1.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Wooden Office Table for Work from Home | Study Table Gaming Desk | Computer/Laptop Workstation | Solid Wood Acacia & Iron, Brown & Black</h3>
+						<p class="product-price"> ₹ 5,900 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_10' %}"><img src="{% static '/customer/img/table/study_2.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Inches Wooden Wall Mounted Table | Wall Mount Study Table with Cup & Drawer | Wall Table for Home and Office | Foldable Table</h3>
+						<p class="product-price"> ₹ 2,100 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_11' %}"><img src="{% static '/customer/img/table/study_3.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Wooden Standard Adjustable Laptop and Study Table/Portable Lap Desk - Multipurpose Bed Table with Folding Legs and Drawer - Walnut Finish</h3>
+						<p class="product-price"> ₹ 1100 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_12' %}"><img src="{% static '/customer/img/table/study_4.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Study Table | 1-Year Warranty | Writing, Computer Desk for Students, Adults, Professionals | Engineered Wood | Rolex Brown Finish | Surface Top, Shelves, Cabinet</h3>
+						<p class="product-price"> ₹ 5900 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_13' %}"><img src="{% static '/customer/img/table/study_5.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Solid Sheesham Wood Writing Study Table | Wooden Study Desk with 6 Drawer Storage & 1 Keyboard Tray | Computer Table for Home, Office | Work from Home Laptop Table | Walnut Finish</h3>
+						<p class="product-price"> ₹ 14,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_14' %}"><img src="{% static '/customer/img/table/study_6.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Solid Sheesham Wood Office Table for Office Work | Boss Laptop Computer Table for Work from Home | Reading & Writing Table | Teak</h3>
+						<p class="product-price"> ₹ 10,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_15' %}"><img src="{% static '/customer/img/table/study_7.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Computer Desk With Hutch, 47 Inches Home Office Desk With Space Saving Design With Bookshelf For Small Spaces(Engineered Wood, White)</h3>
+						<p class="product-price"> ₹ 7,900 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_16' %}"><img src="{% static '/customer/img/table/dining_1.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Sheesham Wood 6 Seater Dining Table Set | Living Room Dining Table with 6 Chairs | Wooden Dining Room Sets for Home Kitchen Modern Furniture | Maple Finish</h3>
+						<p class="product-price"> ₹ 25,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_17' %}"><img src="{% static '/customer/img/table/dining_2.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Solid Sheesham Wood Dining Table 4 Seater, Dining Table Set with 3 Chairs & 1 Bench, Home Dining Room Furniture, Teak Wood Dining Table 4 Seater, Teak Finish</h3>
+						<p class="product-price"> ₹ 14,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_18' %}"><img src="{% static '/customer/img/table/dining_3.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Sheesham Wood 6 Seater Dining Table with Cushion Chair Six Seater Wooden Dining Room Set Dinner Table Furniture for Living Room Home Restaurant - Walnut Finish
+						</h3>
+						<p class="product-price"> ₹ 22,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_19' %}"><img src="{% static '/customer/img/table/dining_4.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Solid Sheesham Wood Six Seater Dining Set For Dining Room | Wooden One Dining Table With Six Chairs | Colour Finish - Natural Brown Finish |</h3>
+						<p class="product-price"> ₹ 22,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 0px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_20' %}"><img src="{% static '/customer/img/table/dining_5.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with Cushion Chairs | Dinner Table 6 Seater | Dining Room Sets</h3>
+						<p class="product-price"> ₹ 19,900 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_21' %}"><img src="{% static '/customer/img/table/dining_6.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Sheesham Solid Wood Dining Table for Living Room Home Hall Hotel Dinner Restaurant Wooden Dining Table Dining Room Set Home & Kitchen (6 Seater, Honey Oak)</h3>
+						<p class="product-price"> ₹ 29,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 573.7px;">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'table_22' %}"><img src="{% static '/customer/img/table/dining_7.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Solid Sheesham Wood Six Seater Dining Set for Dining Room | Wooden One Dining Table with Four Chairs & One Bench</h3>
+						<p class="product-price"> ₹ 27,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-5">
+                <div class="col-md-12">
+		            <div class="product-filters text-center ">
+						<a href="{% url 'customer_dashboard' %}" class="cart-btn btn-lg">Go to Home</a>
+					</div>
+		        </div>
+            </div>
+		</div>
+	</div>
+{% endblock %}

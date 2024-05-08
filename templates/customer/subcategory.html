@@ -1,0 +1,41 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}		
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						{% for row in selected_sub_category %}
+    					<h1>{{ row.sub_cat_name }}</h1>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+	
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+			<div class="row product-lists" style="position: relative; height:auto;">
+				{% for row in result %}
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href="/customer/detail/{{row.id}}"><img src="/media/myadmin/{{row.image}}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip" class="text-overflow-clip">{{row.name}}</h3>
+						<p class="product-price">₹{{row.price}}</p>
+						<a href="{% url 'cart_add' row.id %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+
+			
+		</div>
+	</div>
+
+{% endblock %}	

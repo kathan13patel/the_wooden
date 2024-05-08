@@ -1,0 +1,190 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}
+<!-- search area -->
+	<!-- <div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+				</div>
+				<div class="col-lg-8">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="">
+							<button type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+<!-- end search area -->
+
+	<!-- home page slider -->
+	<div class="homepage-slider">
+		<!-- single home slider -->
+		<div class="single-homepage-slider homepage-bg-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg-7 offset-lg-1 offset-xl-0">
+						<div class="hero-text">
+							<div class="hero-text-tablecell">
+								<p class="subtitle">Make your living room the heart of your home.</p>
+								<h1>living room range</h1>
+								<div class="hero-btns">
+									<a href="/customer/category/4" class="boxed-btn">Collection</a>
+									<a href="{% url 'inquiry' %}" class="bordered-btn">Contact Us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- single home slider -->
+		<div class="single-homepage-slider homepage-bg-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1 text-center">
+						<div class="hero-text">
+							<div class="hero-text-tablecell">
+								<p class="subtitle">Work in comfort and style with our office furniture.</p>
+								<h1>Office furniture</h1>
+								<div class="hero-btns">
+									<a href="/customer/subcategory/7" class="boxed-btn">Collection</a>
+									<a href="{% url 'inquiry' %}" class="bordered-btn">Contact Us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- single home slider -->
+		<div class="single-homepage-slider homepage-bg-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1 text-right">
+						<div class="hero-text">
+							<div class="hero-text-tablecell">
+								<h1>Dining Set</h1>
+								<p class="subtitle">To Make Bond Over Meals</p>
+								<div class="hero-btns">
+									<a href="/customer/subcategory/6" class="boxed-btn">Collection</a>
+									<a href="{% url 'inquiry' %}" class="bordered-btn">Contact Us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end home page slider -->
+
+	<!-- features list section -->
+	<div class="list-section pt-80 pb-80">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-6 col-md-6 mb-4 mb-lg-0">
+					<div class="list-box d-flex align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-shipping-fast"></i>
+						</div>
+						<div class="content">
+							<h3>Free Home Delivery</h3>
+							<p>Enjoy the convenience of free home delivery on furniture purchases with us. Get your furniture delivered straight to your door hassle-free. Upgrade your home decor effortlessly with our service.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="list-box d-flex align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-money-bill-alt"></i>
+						</div>
+						<div class="content">
+							<h3>Convenient Price</h3>
+							<p>Get the best deals on furniture at our website with unbeatable prices. Shop now for high-quality pieces to elevate your home decor on a budget.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="list-box d-flex align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-sort-amount-up"></i>
+						</div>
+						<div class="content">
+							<h3>High-Quality</h3>
+							<p>Introducing our high-quality furniture collection, built to last with durable materials and strong craftsmanship. Elevate your space with stylish and reliable furniture that will stand the test of time.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="list-box d-flex align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-thumbs-up"></i>
+						</div>
+						<div class="content">
+							<h3>42 month Warrenty</h3>
+							<p>42-month warranty includes free replacement of defective parts, caused by manufacturing or material defects. Wear and tear, improper use, and modifications are not covered. Contact us with issue description and proof of purchase for warranty claims. We aim to promptly and satisfactorily resolve any problems.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end features list section -->
+
+	<!-- product section -->
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">	
+						<h3><span class="orange-text">Our</span> Products</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="/customer/detail/20"><img src="/static/customer/img/chair/bar_5.jpg" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Bar Stool, Pack of 2, Solid Wood with Natural Finish</h3>
+						<p class="product-price"> ₹4,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="/customer/detail/48"><img src="/static/customer/img/wardrobe/wardrobe_3.jpg" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Engineered Wood Four Door Wardrobe with Mirror in White Colour</h3>
+						<p class="product-price">₹ 15,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="/customer/detail/52"><img src="/static/customer/img/tv/tv_6.jpg" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Wall Mount TV Entertainment Unit/with Set Top Box Stand and Wall Shelf Display Rack for Living Room White (Ideal for up to 32") Screen</h3>
+						<p class="product-price">₹ 4,500 </p>
+						<a href="/customer/detail_add/{{product.id}}" class="cart-btn"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end product section -->
+{% endblock %}

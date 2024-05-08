@@ -1,0 +1,48 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}
+<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1>Payment</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- contact form -->
+	<div class="contact-from-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="billing-address-form">
+                        <form class="text-center p-3" action="/customer/success" method="POST">
+				 		{% csrf_token %}
+                            <script src="https://checkout.razorpay.com/v1/checkout.js" 
+						        data-key="rzp_test_PvM4GxK9MYlCUc" 
+						        data-amount="{{payment.amount}}"
+						        data-currency="INR" 
+						        data-order_id="{{payment.id}}" 
+						        data-buttontext="Pay with Razorpay"
+						        data-name="The Wooden"
+						        data-description="Complete Online"
+						        data-image="{'/images/logo3.png'}" 
+						        data-prefill.name="{{request.user.first_name}}"
+						        data-prefill.email="{{request.user.email}}" 
+						        data-theme.color="#4755AB">
+					   	 	</script>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+			</div>
+		</div>
+	</div>
+	<!-- end contact form -->
+{% endblock %}

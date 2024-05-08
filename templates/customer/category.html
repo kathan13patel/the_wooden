@@ -1,0 +1,57 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}		
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						{% for row in selected_category %}
+    					<h1>{{ row.category_name }}</h1>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+	
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+                <div class="col-md-12">
+                    <div class="product-filters text-center ">
+                    	{% for row in sub %}
+						<a href="/customer/subcategory/{{row.id}}" class="cart-btn btn-lg">{{row.sub_cat_name}}</a>
+						{% endfor %}
+					</div>
+                </div>
+            </div>
+
+			<div class="row product-lists" style="position: relative; height:auto;">
+				{% for row in result %}
+				<div class="col-lg-4 text-center" style="position: absolute; left: 0px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href="/customer/detail/{{row.id}}"><img src="/media/myadmin/{{row.image}}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip" class="text-overflow-clip">{{row.name}}</h3>
+						<p class="product-price">₹{{row.price}}</p>
+						<a href="{% url 'cart_add' row.id %}" id="submit" name="submit" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+
+			<div class="row mt-5">
+                <div class="col-md-12">
+		            <div class="product-filters text-center ">
+						<a href="{% url 'customer_dashboard' %}" class="cart-btn btn-lg">Go to Home</a>
+					</div>
+		        </div>
+            </div>
+		</div>
+	</div>
+
+{% endblock %}	

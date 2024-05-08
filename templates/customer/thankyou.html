@@ -1,0 +1,30 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+<div class="container">
+  	<div class="row">
+    	<div class="col-md-12 text-center pt-5 pb-5">
+	      	<!-- <span class="display-3 thankyou-icon"> -->
+	        	<i class="fas fa-smile fa-spin my-5" style="font-size: 150px;"></i>	
+	      	<!-- </span> -->
+	      	<h2 class="display-3 text-black">Thank you!</h2>
+	      	<p class="lead mb-5 font-weight-bold text-secondary">You order has been successfuly placed.</p>
+	      	<a href="{% url 'customer_dashboard' %}" class="boxed-btn">Go to home</a>
+    	</div>
+  	</div>
+</div>
+{% endblock %}

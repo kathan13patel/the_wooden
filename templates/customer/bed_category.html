@@ -1,0 +1,240 @@
+{% extends 'common/customer/layout_user.html' %}
+{% load static %}
+{% block content %}
+<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1>Beds</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- end breadcrumb section -->
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+                <div class="col-md-12">
+                    <div class="product-filters text-center ">
+						<a href="{% url 'single_bed' %}" class="cart-btn btn-lg">Single Bed</a>
+						<a href="{% url 'double_bed' %}" class="cart-btn btn-lg">Double Bed</a>
+					</div>
+                </div>
+            </div>
+
+			<div class="row product-lists" style="position: relative; height:auto;">
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'single_bed_1' %}"><img src="{% static '/customer/img/bed/single_1.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip" class="text-overflow-clip">Single Bed, Taurus Engineered Wood Bed with Storage, Wooden Bed (78x36 Inches)</h3>
+						<p class="product-price">₹9,000</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href="{% url 'single_bed_2' %}"><img src="{% static '/customer/img/bed/single_2.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip" class="text-overflow-clip">Solid Sheesham Wood Single Bed Cot with Storage | Single Size Bed for Bedroom | Multipurpose Storage Bed (Teak-C, Single)</h3>
+						<p class="product-price">₹23,000</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'single_bed_3' %} "><img src="{% static '/customer/img/bed/single_3.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip" class="text-overflow-clip">Solid Sheesham Wood Single Size Without Storage Palang for Living Room Bedroom Wooden Bed Cot Palang (Natural Finish)</h3>
+						<p class="product-price">₹15,000</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 573.7px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'single_bed_4' %} "><img src="{% static '/customer/img/bed/single_4.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip" class="text-overflow-clip">Single Bed with Headboard Open Storage, Takeo Series - Engineered Wood | - Walnut Colour</h3>
+						<p class="product-price">₹10,000</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 573.7px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'single_bed_5' %} "><img src="{% static '/customer/img/bed/single_5.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip" class="text-overflow-clip">Single Bed Cot with Ladder - Sturdy, Durable for Bedroom, Home Decor (White, Size: 63 x 32 x 27.5 Inch)</h3>
+						<p class="product-price">₹9,000</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 573.7px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'single_bed_6' %} "><img src="{% static '/customer/img/bed/single_6.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip" class="text-overflow-clip">Engineered Wood Single Bed with Drawers (Finish Color - Moonshine White, Matte Finish)</h3>
+						<p class="product-price">₹19,500</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'single_bed_7' %} "><img src="{% static '/customer/img/bed/single_7.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Solid Sheesham Wood Single Bed with 2 Drawer Storage - Elegant and Functional Bedroom Furniture</h3>
+						<p class="product-price">₹29,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'single_bed_8' %} "><img src="{% static '/customer/img/bed/single_8.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Wooden Trundle Bed, Finish : Natural, Single Size Wooden Bed with Sliding Bed, Size : 200 X 96.5 X 100.5 CM</h3>
+						<p class="product-price">₹19,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'single_bed_9' %} "><img src="{% static '/customer/img/bed/single_9.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Single Bed with Headboard & Without Storage | Rubber Wood</h3>
+						<p class="product-price">₹10,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 573.7px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'single_bed_10' %} "><img src="{% static '/customer/img/bed/single_10.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Engineered Wood Single Bed Without Storage Box with Headboard for Kids, Adult Bedroom Home Furniture</h3>
+						<p class="product-price">₹11,000</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'double_bed_1' %} "><img src="{% static '/customer/img/bed/double_1.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Engineered Wood Queen Size Storage Bed with Hydraulic Mechanism - (Matte Finish_Brown)</h3>
+						<p class="product-price">₹29,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'double_bed_2' %} "><img src="{% static '/customer/img/bed/double_2.jpg' %}" alt=""></a>	
+						</div>
+						<h3 class="text-overflow-clip">Solid Sheesham Wood King Size Poster Bed with Storage Wooden Double Bed Furniture for Bedroom Living Room Home (Walnut Finish, size 1.98L x 1.83W x 1.99H )</h3>
+						<p class="product-price">₹33,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'double_bed_3' %} "><img src="{% static '/customer/img/bed/double_3.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Solid Sheesham Wood Low Height Queen Size Bed Without Storage | Wooden Double Bed | Low Floor/Lying/Rise/Level/Profile Cot with Cushioned Headboard | Rosewood, Brown Finish & Blue</h3>
+						<p class="product-price">₹16,800 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 573.7px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'double_bed_4' %} "><img src="{% static '/customer/img/bed/double_4.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Engineered Wood Queen Bed with Storage (Knotty Wood Finish)</h3>
+						<p class="product-price">₹15,900</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 573.7px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'double_bed_5' %} "><img src="{% static '/customer/img/bed/double_5.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Engineered Wood King Bed with Box Storage (Wenge finish)</h3>
+						<p class="product-price">₹15,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 573.7px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'double_bed_6' %} "><img src="{% static '/customer/img/bed/double_6.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Sheesham Wooden Bed King Size Bed with Storage | Wooden Double Bed Cot Bed and Headboard for Bedroom | Rosewood, Natural Finish</h3>
+						<p class="product-price">₹25,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'double_bed_7' %} "><img src="{% static '/customer/img/bed/double_7.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip"> Double Bed, King Size Bed, Andromeda Sheesham Wood Bed with Storage, Solid Wooden Bed (Solid Wooden Texture_Natural Finish)</h3>
+						<p class="product-price">₹24,500 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 380px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'double_bed_8' %} "><img src="{% static '/customer/img/bed/double_8.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Sheesham Wood King Size Bed with Cube Blocks Design - Hydraulic Storage, Elegant and Functional (Sheesham Wood-Cube Blocks Design)</h3>
+						<p class="product-price">₹50	,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 760px; top: 0px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'double_bed_9' %} "><img src="{% static '/customer/img/bed/double_9.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Engineered Wood Double Bed, King Size Bed with Storage Box for Bedroom Home Furniture (Wenge & White)</h3>
+						<p class="product-price">₹17,000 </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center" style="position: absolute; left: 0px; top: 573.7px;">
+					<div class="single-product-item" style="height:;">
+						<div class="product-image">
+							<a href=" {% url 'double_bed_10' %} "><img src="{% static '/customer/img/bed/double_10.jpg' %}" alt=""></a>
+						</div>
+						<h3 class="text-overflow-clip">Modern Upholstered King Size Bed for Bedroom - Upholestery Premium Fabric Cot for Home - 6.5 x 6 Ft Bed</h3>
+						<p class="product-price">₹21,500</p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-5">
+                <div class="col-md-12">
+		            <div class="product-filters text-center ">
+						<a href="{% url 'customer_dashboard' %}" class="cart-btn btn-lg">Go to Home</a>
+					</div>
+		        </div>
+            </div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends 'common/customer/layout_user.html' %}
+<!-- {% load static %} -->
+{% load cart_tag %}
+{% block content %}
+<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<!-- <p>Fresh and Organic</p> -->
+						<h1>Cart</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- cart -->
+	<center>
+		<div class="cart-section mt-150 mb-150">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-5">
+						<div class="cart-table-wrap">
+							<table class="table-hover">
+								<thead class="cart-table-head font-weight-bold">
+									<tr class="table-head-row">
+										<th class="font-weight-bold">Image</th>
+										<th class="font-weight-bold">Name</th>
+										<th class="font-weight-bold">Price</th>
+										<th class="font-weight-bold">Add/Delete</th>
+										<th class="font-weight-bold">Quantity</th>
+										<th class="font-weight-bold">Total</th>
+										<th class="font-weight-bold">Remove</th>
+									</tr>
+								</thead>
+								<tbody>
+									{% for key,value in request.session.cart.items %}
+									<tr class="table-body-row">
+										<td style="max-width: 200px;"><img src="/media/myadmin/{{value.image}}" height="100" width="100"></td>
+										<td>{{value.name}}</td>
+										<td>₹{{value.price}}</td>
+										<td>
+											<div class="cart_quantity_button">
+												<button class="rounded-circle mb-2 bg-gray border-success" 
+												style="height:30px; width:30px;"><a class="cart_quantity_up text-success h5" href="{% url 'item_increment' value.product_id %}">+</a></button>
+												<center><input class="cart-plus-minus-box form-control col-lg-8 text-center" type="text" id="quantity" name="quantity" value="{{value.quantity}}" min="1" readonly/></center>
+												{%if value.quantity > 1%}
+												<button class="rounded-circle mt-2 bg-gray border-danger"
+												style="height:30px; width:30px;">
+													<a class="cart_quantity_down text-danger h5" href="{% url 'item_decrement' value.product_id %}">-</a></button>
+												{% else %}
+												<button class="rounded-circle mt-2 bg-gray text-muted border-muted" style="height:30px; width:30px;" disabled>
+													<a class="cart_quantity_down text-muted h5">-</a>
+												</button>
+												{%endif%}
+											</div>
+										</td>
+										<td>{{value.quantity}}</td>
+										<td>₹{{value.price|multiply:value.quantity }}</td>
+										<td>
+	                                        <a href="{% url 'item_clear' key %}"><i class="fa fa-times"></i></a>
+	                                    </td>
+									</tr>
+									{% endfor %}
+									<tr class="table-body-row">
+										<td class="font-weight-bold" colspan="5">Total amount</td>
+										<td class="font-weight-bold">{{cart_total_amount}}</td>
+										<td class="product-remove"><a href="{% url 'cart_clear' %}"><i class="fa fa-times"></i></a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+	                <div class="col-lg-12">
+	                   	<div class="cart-buttons text-center">
+	                      	<!-- <a href="{% url 'cart_clear' %}" class	="boxed-btn black">Clear Cart</a> -->
+							<a href="{% url 'check_out' %}" class="boxed-btn black">Check Out</a>
+	                    </div>
+	                </div>
+				</div>
+			</div>
+		</div>
+	</center>
+	<!-- end cart -->
+{% endblock %}

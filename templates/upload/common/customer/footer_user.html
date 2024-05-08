@@ -1,0 +1,70 @@
+{% load static %}
+
+<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">About us</h2>
+						<p>Welcome to our furniture website! We are dedicated to providing you with high-quality and stylish furniture options for every room in your home. Explore our wide range of products and find the perfect pieces to enhance your living space.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Get in Touch</h2>
+						<ul>
+							<li><a href="mailto:changechadhaval100@gmail.com">changechadhaval100@gmail.com</a></li>
+							<li>+91 9723507749 </li>
+							<li><a href="mailto:patelkathan1384@gmail.com">patelkathan1384@gmail.com</a></li>
+							<li>+91 8799139604 </li>
+							<li><a href="mailto:koitiyasiddhraj123@gmail.com">koitiyasiddhraj123@gmail.com</a></li>
+							<li>+91 8128706877 </li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Pages</h2>
+						<ul>
+							<li><a href="{% url 'customer_dashboard' %}">Home</a></li>
+							<li><a href="{% url 'about' %}">About</a></li>
+							<li><a href="{% url 'profile' %}">Profile</a></li>
+							<li><a href="{% url 'inquiry' %}">Contact</a></li>
+							<li><a href="{% url 'customer_feedback' %}">Feedback</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Category</h2>
+						{% for row in category %}
+						<ul>
+							<li class="mb-3"><a href="/customer/category/{{row.id}}">{{row.category_name}}</a></li>
+						</ul>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2024 - <a href="{% url 'customer_dashboard' %}">The Wooden</a>,All Rights Reserved.</p>
+				</div>
+				<div class="col-lg-6 text-right col-md-12">
+					<div class="social-icons">
+						<ul>
+							<li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.linkedin.com/home" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end copyright -->

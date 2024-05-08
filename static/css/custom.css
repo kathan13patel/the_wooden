@@ -1,0 +1,15 @@
+@media (max-width: 1008px) {
+  .table-respo {
+/*    width: 50px;*/
+    overflow-x: hidden; 
+    background-color: red;
+  }
+}
+
+@media (max-width: 812px) {
+  .table-respo {
+    width: 812px;
+    overflow-x: hidden; 
+    background-color: yellow;
+  }
+}
